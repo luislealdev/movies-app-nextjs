@@ -10,15 +10,13 @@ interface Props {
 }
 
 const MoviePage: NextPage<Props> = ({ movie }) => {
-  console.log(movie);
-
   return (
     <MainLayout>
       <main>
         <div
-          className="md:flex sm:block bg-cover bg-center"
+          className="md:flex sm:block bg-cover bg-center w-full h-full object-cover"
           style={{
-            backgroundImage: `url(http://image.tmdb.org/t/p/w500/${movie.backdrop_path})`,
+            background: `rgba(0, 0, 0, 0.5) url(http://image.tmdb.org/t/p/w500/${movie.backdrop_path})`,
           }}
         >
           <div className="basis-1/4 ">
