@@ -4,8 +4,9 @@ export interface movie {
   title: string;
   release_date: string;
   vote_average: number;
-  genders: string[];
+  genres: string[];
   backdrop_path: string;
+  overview: string;
 }
 
 export interface moviesList {

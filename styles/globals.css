@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.max-width{
-    width: 100%;
-} 
-
-.auto-height{
-    height: auto;
+.max-width {
+  width: 100%;
 }
+
+.auto-height {
+  height: auto;
+}
+

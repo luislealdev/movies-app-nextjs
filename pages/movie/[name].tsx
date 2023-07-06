@@ -10,11 +10,13 @@ interface Props {
 }
 
 const MoviePage: NextPage<Props> = ({ movie }) => {
+  console.log(movie);
+
   return (
     <MainLayout>
       <main>
         <div
-          className="flex bg-cover bg-center bg-gradient-to-r"
+          className="md:flex sm:block bg-cover bg-center"
           style={{
             backgroundImage: `url(http://image.tmdb.org/t/p/w500/${movie.backdrop_path})`,
           }}
@@ -25,11 +27,14 @@ const MoviePage: NextPage<Props> = ({ movie }) => {
               alt={movie.title}
               width={500}
               height={500}
-              className="max-width auto-height rounded-lg py-8 px-4"
+              className="max-width auto-height rounded-lg md:py-8 md:px-4 sm:p-24"
             />
           </div>
-          <div className="basis-3/4">
-            <h1>{movie.title}</h1>
+          <div className="basis-3/4 grid content-center">
+            <h1 className="text-2xl text-white">{movie.title}</h1>
+            <p>{movie.release_date}</p>
+            <h2>Overview</h2>
+            <p>{movie.overview}</p>
           </div>
         </div>
       </main>
