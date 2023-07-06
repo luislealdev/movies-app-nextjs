@@ -11,7 +11,7 @@ interface Props {
 const Home: NextPage<Props> = ({ movies }) => {
   return (
     <MainLayout>
-      <main className="flex sm:flex-column lg:flex-row gap-x-8">
+      <main className="md:flex sm:flex-column lg:flex-row gap-x-8">
         <Aside />
         <MoviesList movies={movies} />
       </main>
