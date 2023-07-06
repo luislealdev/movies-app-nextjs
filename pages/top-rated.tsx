@@ -20,7 +20,7 @@ const Home: NextPage<Props> = ({ movies }) => {
 };
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-  const { data } = await movieApi.get("movie/popular");
+  const { data } = await movieApi.get("movie/top_rated");
   const { data: genreData } = await movieApi.get("/genre/movie/list");
   const genres = genreData.genres;
 

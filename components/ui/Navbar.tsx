@@ -115,7 +115,7 @@ export const Navbar = () => {
                     strokeWidth={1.5}
                     stroke="currentColor"
                     className="w-6 h-6"
-                    color="#37BCF8"
+                    color="#37bcf8"
                   >
                     <path
                       strokeLinecap="round"

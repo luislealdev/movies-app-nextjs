@@ -12,20 +12,20 @@ export const Aside = () => {
 
       <div className="flex gap-4 p-4 justify-center">
         <Link
-          href=""
-          className="rounded-full bg-sky-400 text-white p-2 text-xs"
+          href="upcoming"
+          className="rounded-full bg-sky-400 hover:bg-sky-500 text-white p-2 text-xs"
         >
           Upcoming
         </Link>
         <Link
-          href=""
-          className="rounded-full bg-sky-400 text-white p-2 text-xs"
+          href="/"
+          className="rounded-full bg-sky-400 hover:bg-sky-500 text-white p-2 text-xs"
         >
           Populars
         </Link>
         <Link
-          href=""
-          className="rounded-full bg-sky-400 text-white p-2 text-xs"
+          href="top-rated"
+          className="rounded-full bg-sky-400 hover:bg-sky-500 text-white p-2 text-xs"
         >
           Top Rated
         </Link>
