@@ -5,6 +5,7 @@ export interface movie {
   release_date: string;
   vote_average: number;
   genders: string[];
+  backdrop_path: string;
 }
 
 export interface moviesList {
