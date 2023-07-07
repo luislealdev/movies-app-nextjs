@@ -1,4 +1,4 @@
-import React from "react";
+import Link from "next/link";
 
 export const Navbar = () => {
   return (
@@ -7,16 +7,18 @@ export const Navbar = () => {
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <img
-                className="block h-8 w-auto lg:hidden"
-                src="https://files.readme.io/29c6fee-blue_short.svg"
-                alt="Your Company"
-              />
-              <img
-                className="hidden h-8 w-auto lg:block"
-                src="https://files.readme.io/29c6fee-blue_short.svg"
-                alt="Your Company"
-              />
+              <Link href="/">
+                <img
+                  className="block h-8 w-auto lg:hidden"
+                  src="https://files.readme.io/29c6fee-blue_short.svg"
+                  alt="TMDB"
+                />
+                <img
+                  className="hidden h-8 w-auto lg:block"
+                  src="https://files.readme.io/29c6fee-blue_short.svg"
+                  alt="TMDB"
+                />
+              </Link>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">

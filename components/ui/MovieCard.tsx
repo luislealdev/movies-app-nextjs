@@ -7,6 +7,7 @@ interface Props {
 }
 
 export const MovieCard: FC<Props> = ({ movie }) => {
+  
   return (
     <Link href={`movie/${movie.title.toLowerCase().replace(" ", "+")}`}>
       <div className="bg-slate-50 flex flex-col drop-shadow-md rounded-lg md:hover:scale-110">
@@ -30,9 +31,9 @@ export const MovieCard: FC<Props> = ({ movie }) => {
           <br />
           <p className="font-sans text-sm font-bold">Genres</p>
           <ul>
-            {movie.genders.map((gender) => (
-              <li key={gender} className="font-sans text-sm">
-                · {gender}
+            {movie.genders.map((genre) => (
+              <li key={genre} className="font-sans text-sm">
+                · {genre}
               </li>
             ))}
           </ul>
